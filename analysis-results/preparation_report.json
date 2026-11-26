@@ -1,0 +1,77 @@
+{
+  "generated_at_utc": "2026-11-26T03:18:26.126401+00:00",
+  "input_file": "D:\\hive-network-ml\\ml\\isolation-forest\\dataset_v2\\data\\wallet_features.csv",
+  "output_dir": "D:\\hive-network-ml\\ml\\isolation-forest\\dataset_v2\\data\\model",
+  "total_wallets": 300,
+  "eligible_wallets": 117,
+  "excluded_wallets": 183,
+  "minimum_tx_count": 20,
+  "selected_feature_count": 11,
+  "selected_features": [
+    "tx_count",
+    "incoming_tx_count",
+    "outgoing_tx_count",
+    "transfer_count",
+    "unique_counterparties",
+    "unique_assets",
+    "active_days",
+    "active_span_hours",
+    "avg_interval_minutes",
+    "median_interval_minutes",
+    "tx_per_active_day"
+  ],
+  "log1p_features": [
+    "tx_count",
+    "incoming_tx_count",
+    "outgoing_tx_count",
+    "transfer_count",
+    "unique_counterparties",
+    "unique_assets",
+    "avg_interval_minutes",
+    "median_interval_minutes",
+    "tx_per_active_day"
+  ],
+  "keep_as_is_features": [
+    "active_days",
+    "active_span_hours"
+  ],
+  "high_correlation_pairs_threshold": 0.9,
+  "high_correlation_pairs_count": 4,
+  "zero_counts_after_transform": {
+    "tx_count": 0,
+    "incoming_tx_count": 2,
+    "outgoing_tx_count": 0,
+    "transfer_count": 0,
+    "unique_counterparties": 0,
+    "unique_assets": 0,
+    "active_days": 0,
+    "active_span_hours": 0,
+    "avg_interval_minutes": 0,
+    "median_interval_minutes": 0,
+    "tx_per_active_day": 0
+  },
+  "zero_rates_after_transform": {
+    "tx_count": 0.0,
+    "incoming_tx_count": 0.017094017094017096,
+    "outgoing_tx_count": 0.0,
+    "transfer_count": 0.0,
+    "unique_counterparties": 0.0,
+    "unique_assets": 0.0,
+    "active_days": 0.0,
+    "active_span_hours": 0.0,
+    "avg_interval_minutes": 0.0,
+    "median_interval_minutes": 0.0,
+    "tx_per_active_day": 0.0
+  },
+  "outputs": [
+    "model_features.csv",
+    "selected_features_raw.csv",
+    "eligible_wallets.csv",
+    "excluded_wallets.csv",
+    "feature_metadata.json",
+    "preparation_report.json",
+    "feature_distribution.csv",
+    "feature_correlation.csv",
+    "high_correlation_pairs.csv"
+  ]
+}

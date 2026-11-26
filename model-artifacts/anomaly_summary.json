@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-11-26T04:05:07.177520+00:00",
+  "model_name": "IsolationForest",
+  "baseline": "A",
+  "dataset_size": 117,
+  "feature_count": 11,
+  "anomaly_count": 6,
+  "normal_count": 111,
+  "actual_anomaly_rate": 0.05128205128205128,
+  "configured_contamination": 0.05,
+  "note": "Anomaly detection is not equivalent to fraud detection. Scores identify unusual behavior relative to the sampled dataset. No fraud labels or ground-truth evaluation are available in this experiment."
+}

@@ -1,0 +1,35 @@
+{
+  "model_name": "IsolationForest",
+  "baseline": "A",
+  "n_estimators": 300,
+  "max_samples": "auto",
+  "contamination": 0.05,
+  "max_features": 1.0,
+  "bootstrap": false,
+  "random_state": 42,
+  "n_jobs": -1,
+  "features": [
+    "tx_count",
+    "incoming_tx_count",
+    "outgoing_tx_count",
+    "transfer_count",
+    "unique_counterparties",
+    "unique_assets",
+    "active_days",
+    "active_span_hours",
+    "avg_interval_minutes",
+    "median_interval_minutes",
+    "tx_per_active_day"
+  ],
+  "wallet_column": "wallet",
+  "input_file": "D:\\hive-network-ml\\ml\\isolation-forest\\dataset_v2\\data\\model\\model_features.csv",
+  "model_file": "D:\\hive-network-ml\\ml\\isolation-forest\\dataset_v2\\data\\model\\results\\model.joblib",
+  "score_interpretation": {
+    "anomaly_score": "Higher values indicate more anomalous observations relative to this fitted model.",
+    "decision_score": "Negative decision_function values indicate observations classified as anomalies.",
+    "prediction": {
+      "-1": "ANOMALY",
+      "1": "NORMAL"
+    }
+  }
+}
